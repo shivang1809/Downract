@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <?php
+    required('contact-form.php');
+    ?>
+    <title>Document</title>
+    <style>
+
+        #button{
+            background-color: rgb(255, 54, 54);
+            color: #f1f1f1;
+            margin-right: 30px;
+            border: none;
+            width:170px;
+            padding:11px;
+            font-size:30px;
+            border-top-left-radius:0%;
+            border-bottom-left-radius: 0%;
+            cursor:pointer;
+            text-align: center;
+
+        }
+        #button:hover {
+            background-color: rgb(149, 151, 151);
+            color: #fafafa;
+            }
+        
+            .button2{
+            background-color: rgb(255, 54, 54);
+            color: #f1f1f1;
+            margin-right: 30px;
+            border: none;
+            width:170px;
+            padding:11px;
+            font-size:30px;
+            border-radius:20px;
+            cursor:pointer;
+            text-align: center;
+
+        }
+        .button2:hover:hover {
+            background-color: rgb(149, 151, 151);
+            color: #fafafa;
+            }
+        input{
+            text-align:left;
+            width:90%;
+            padding:10px;
+            font-size:30px;
+            border-radius:20px;
+            }
+
+            .intro{
+                display: flex;
+                color: #f8f7f7;
+                height: 100px;
+                font-size: 20px;
+            }
+            .typing{
+                position: relative;
+            }
+            .typing::after {
+                content: "";
+                position: absolute;
+                right: -5px;
+                width: 1px;
+                height: 100%;
+                border-right: 3px solid white;
+                animation: blink 0.5s infinite ease;
+            }
+            @keyframes blink {
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            #output{
+                color: white;
+                margin: 60px;
+            }
+            
+            #link{
+                margin-left: 30px;
+                border-top-right-radius: 0%;
+                border-bottom-right-radius: 0%;
+                float: left;
+                width: 50%;
+            }
+            .table1, .th1, .tr1 {
+              border: 0;
+              border-collapse: collapse;
+              background-color: #f1f1f1;
+              border-radius: 20px;
+              float: right;
+              width: 500px;
+            }
+            .th1{
+                background-color: black;
+                color: white;
+            }
+            .sugBox{
+                text-align: left;
+                width: 93%;
+                border-radius: 20px;
+                font-size: 30px;
+            }
+
+    </style>
+</head>
+<body>
+
+    <nav class="menu-container">
+        <!-- burger menu -->
+        <input type="checkbox" aria-label="Toggle menu" />
+        <span></span>
+        <span></span>
+        <span></span>
+      
+        <!-- logo -->
+        <a class="menu-logo">
+          <img src="icon.png" alt="My Awesome Website"/><a style="font-size: 40px; color: #00C6A7;">Downract</a>
+        </a>
+      
+        <!-- menu items -->
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="/about.html">
+                About us
+              </a>
+            </li>
+            <li>
+                <a href="#Suggestion">
+                    Suggestion
+                </a>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </div>
+      </nav>
+
+    <center>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <div class="intro">
+                            <h1 class="typing">hii</h1>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </center>
+    <br><br>
+
+    <h1 style="color: white; margin-left: 40px;">Get direct download link of Google Drive.</h1>
+
+
+        <form action="#home" onsubmit="return myFunction()">
+            <input type="search" placeholder="Enter the URL" name="link" id="link"/>
+            <input type="text" placeholder="Enter file name with extention" name="f-name" id="f-name" hidden/>
+            <input type="submit" value="Submit" id="button"/>  
+            
+
+        </form>
+        <br>
+        
+
+        <br><br>
+        <h3 id="output">Link will come here</h3>
+        <br><br><br><br><br><br><br><br><br>
+
+        <table class="table1" id="Suggestion">
+            <thead>
+                <tr class="tr1">
+                    <th class="th1"><h1>Suggestion</h1>
+                    </th>
+                </tr>
+                <tr class="tr1">
+                    <th>
+                        <form method="POST"  action="/contact-form.php">
+                            <input type="text" placeholder="Name" class="form-control" name="name" required>
+                            <input type="email" placeholder="Email ID" class="form-control" name="email">
+                            <textarea type="text" placeholder="Your Suggrstion" class="sugBox" rows="4" name="message" required></textarea>
+                            <input type="submit" value="Submit" class="button2">
+                        </form>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+
+    <script src="js/anima.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
