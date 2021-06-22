@@ -3,6 +3,11 @@ body {
     font-family: Sans-Serif;
     margin: 0;
   }
+  footer{
+    background-color: black;
+    color: white;
+    height: 50px;
+}
   
   .menu-container {
     position: relative;
