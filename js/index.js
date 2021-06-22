@@ -4,7 +4,8 @@ function myFunction() {
     var fname = document.getElementById("f-name").value.indexOf(".");
     var idtake1 = link.replace('https://drive.google.com/file/d/','');
     var idtake2 = idtake1.replace('/view?usp=sharing','');
-    var id = (''+idtake2);
+    var idtake3 = idtake2.replace('/view?usp=drivesdk','');
+    var id = (''+idtake3);
     var output = ('https://drive.google.com/uc?export=download&id='+ id)
     submitOK = "true";
     document.getElementById("output").innerHTML = output;
