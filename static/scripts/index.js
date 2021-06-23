@@ -30,15 +30,9 @@ function copy() {
     var copyText = document.getElementById('output');
     document.getElementById("cobtn").innerHTML = 'Copied!';
     Text = copyText.innerHTML;
+    console.log(Text)
+    Text = Text.replace('amp;','')
     navigator.clipboard.writeText(Text)
-    // console.log(Text);
-    // Text.select();
-    // Text.setSelectionRange(0, 99999); /* For mobile devices */
-  
-    // /* Copy the text inside the text field */
-    // document.execCommand("copy");
-  
-    // /* Alert the copied text */
     alert("Link Copied to Clipboard!");
   } 
 
