@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /search
 Allow: /
 
-Sitemap: https://downract.vercel.app/sitemap.txt
+Sitemap: https://downract.vercel.app/sitemap.xml
