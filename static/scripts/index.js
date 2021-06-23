@@ -5,7 +5,8 @@ function myFunction() {
     var idtake1 = link.replace('https://drive.google.com/file/d/','');
     var idtake2 = idtake1.replace('/view?usp=sharing','');
     var idtake3 = idtake2.replace('/view?usp=drivesdk','');
-    var id = (''+idtake3);
+    var idtake4 = idtake3.replace('/view','')
+    var id = (''+idtake4);
     var x = document.getElementById("myDIV");
     x.style.display = "block";
     var output = ('https://drive.google.com/uc?export=download&id='+ id)
