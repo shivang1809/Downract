@@ -87,15 +87,15 @@
 <body>
 
     
-    <header class="text-gray-400 bg-gray-900 body-font">
+    <header class="text-gray-400 bg-gray-900 body-font heading">
         <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
           <a class="flex title-font font-xx-large items-center text-white mb-4 md:mb-0">
             <img src="../static/images/f3.png" width="50px" height="50px" alt="">
             <span class="ml-3 text-xl">Downract</span>
           </a>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a href="../templates/index.html" class="mr-5 hover:text-white">Home</a>
-            <a href="../templates/how-to-use.html" class="mr-5 hover:text-white">How to Use</a>
+            <a href="../templates/index.html" class="link"><i class="fas fa-house-user"></i> Home</a>
+            <a href="../templates/how-to-use.html" class="link"><i class="fas fa-arrow-down"></i> How to Use</a>
           </nav>
           
         </div>
@@ -119,8 +119,7 @@
                         <form action="#home" onsubmit="return myFunction()">
                         <input id='link' required placeholder="e.g. (https://drive.google.com/ADhdvvFDsdh)" type="search" id="link" name="link" class="w-full bg-gray-800 rounded border bg-opacity-100 border-gray-700 focus:ring-2 focus:ring-yellow-900 focus:bg-transparent focus:border-yellow-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                         <p class="text-sm mt-2 text-white mb-8 w-full">Paste the Google Drive Link Here</p><input type="text" placeholder="Enter file name with extention" name="f-name" id="f-name" hidden />
-                        <input type="submit" value="Submit" id="button" class="flex mx-auto mt-16 text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg"></input>
-                        
+                        <button type="submit" value="Submit" id="button" class="flex mx-auto mt-16 text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg"><i class="fas fa-cloud-download-alt icon"></i> Generate Link</button>
                         </form>
                     </div>
                    </div>
