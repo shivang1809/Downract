@@ -28,6 +28,16 @@
     user-select: none;
     box-sizing: border-box;
   }
+  .link{
+    transition: 2s;
+    margin-right: 25px;
+  }
+  .link:hover{
+    letter-spacing: 5px;
+    font-weight: bolder;
+    color: #D83A56;
+
+  }
   
   .menu-logo {
     line-height: 0;
@@ -48,6 +58,11 @@
   
   .menu-container a:hover {
     color: #00C6A7;
+    letter-spacing: 3px;
+  }
+  .icon{
+    font-size: 32px;
+    
   }
   
   .menu-container input {
