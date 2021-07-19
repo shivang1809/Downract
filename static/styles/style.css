@@ -210,7 +210,7 @@
 	width: 100%;
 	height: 100vh;
 	background: #fff
-	url('../images/loader.gif')
+	url('../images/loader.gif') Loading...
         no-repeat center center;	
 	z-index: 99999;
 }
