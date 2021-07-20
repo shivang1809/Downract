@@ -218,7 +218,7 @@
     width: 100px;
     border: 15px solid #45474b;
     border-top-color: #2a88e6;
-    position: absolute;
+    position: fixed;
     margin: auto;
     top: 0;
     bottom: 0;
