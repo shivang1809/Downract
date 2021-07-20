@@ -211,6 +211,7 @@
     overflow: hidden;
     background-color: #16191e;
     position: absolute;
+    z-index: 99999;
 }
 .loader>div{
     height: 100px;
