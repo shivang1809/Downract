@@ -210,7 +210,7 @@
     width: 100vw;
     overflow: hidden;
     background-color: #16191e;
-    position: absolute;
+    position: fixed;
     z-index: 99999;
 }
 .loader>div{
