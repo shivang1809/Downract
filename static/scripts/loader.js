@@ -1,4 +1,4 @@
-var preloader = document.getElementById("loading");
+var preloader = document.getElementById("loader");
 
 function loadingFunction(){
 			preloader.style.display = 'none';
