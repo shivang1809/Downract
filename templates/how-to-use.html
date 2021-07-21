@@ -26,6 +26,29 @@
         #heading{
             font-size:40px;
         }
+        .container{
+            width: 30rem;
+            height: 20rem;
+            box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+            position: relative;
+            background: inherit;
+            overflow: hidden;
+            border-radius: 5px;
+            z-index: 1;
+        }
+        .container:before {
+            content: "";
+            position: absolute;
+            background: inherit;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+            filter: blur(10px);
+            margin: -20px;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
@@ -48,6 +71,7 @@
       <br>
       <br>
         <h1 id="heading"><b>How To Use</b></h1><br><br><br>
+        <div class="container">
         1> Open your Google Drive account and select the file you want direct download link of. <br><br><br>
         <img src="../static/images/1.png" style="align-items: center;" width="800px" > <br><br><br>
         2> Right click on it and click on get link. <br><br><br>
@@ -56,6 +80,7 @@
         <img src="../static/images/3.png" width="800px"> <br><br><br>
         4> Copy the link and paste it in the<a href="../templates/index.html"> URL bar above</a>. <br><br><br>
         <img src="../static/images/4.png" width="800px"> <br><br><br>
+        </div>
     </div>    
     
 </body>
