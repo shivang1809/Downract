@@ -56,7 +56,9 @@
         }
     </style>
 </head>
-<body>
+<body onload="loadingFunction()">
+    <div id="loader"><div></div></div>
+
         <header class="text-gray-400 bg-gray-900 body-font">
           <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
             <a class="flex title-font font-xx-large items-center text-white mb-4 md:mb-0">
@@ -103,6 +105,6 @@
     </span>
   </div>
 </footer>
-
+<script src="../static/scripts/loader.js"></script>
 </html>
 
