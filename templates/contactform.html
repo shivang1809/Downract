@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>How to Use</title>
+    <link rel="shortcut icon" type="image/png" href="../static/images/f3.png"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: url(bg5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        } 
+        .formbox{
+            width: 50%;
+            box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+            position: relative;
+            background: inherit;
+            overflow: hidden;
+            border-radius: 5px;
+            z-index: 1;
+            align-items: center;
+            justify-content: center;
+        }
+        .formbox:before {
+            content: "";
+            position: absolute;
+            background: inherit;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+            filter: blur(10px);
+            margin: -20px;
+            z-index: -1;
+        }
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+        .details{
+            font-size: 20px;
+            width: 50%;
+        }
+    </style>
+</head>
+<body onload="loadingFunction()">
+    <div id="loader"><div></div></div>
+
+        <header class="text-gray-400 bg-gray-900 body-font heading">
+        <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
+          <a class="flex title-font font-xx-large items-center text-white mb-4 md:mb-0">
+            <img src="../static/images/f3.png" width="50px" height="50px" alt="">
+            <span class="ml-3 text-xl">Downract</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="../index.html" class="link"><i class="fas fa-house-user"></i> Home</a>
+            <a href="../templates/how-to-use.html" class="link"><i class="fas fa-arrow-down"></i> How to Use</a>
+          </nav>
+          
+        </div>
+      </header>
+      <center>
+          <h1 style="color: white; font-size: 40px;"><b>Contact us</b></h1>
+      <div class="formbox">
+          <center>
+        <form action="javascript:sendmail()" method="post">
+            <input type="text" class="details" id="name" name="name" placeholder="name" required><br><br>
+            <input type="email" class="details" id="sender" name="sender" placeholder="sender mail id" required><br><br>
+            <textarea class="details" id="Message" name="Message" placeholder="massage" cols="30" rows="10"></textarea><br><br>
+            <button type="submit" class="flex mx-auto mt-16 text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg" onclick="Text=sending...">send massage</button>
+        </form>
+        </center>
+      </div> 
+    </center> 
+    
+</body>
+<footer class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+      
+      <span class="ml-3 text-xl">DownRact</span>
+    </a>
+    <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2021 Shivang Yadav —
+      <a class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">All Rights Reserved</a>
+    </span>
+  </div>
+</footer>
+<script src="../static/scripts/loader.js"></script>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+<script>  
+
+     function sendmail(){
+    
+			var name = $('#name').val();
+			var email = $('#sender').val();
+			var subject = "mail from downract";
+            var message = $('#Message').val();
+
+			// var body = $('#body').val();
+
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+			//console.log(name, phone, email, message);
+
+
+            Email.send({
+        SecureToken:"c79343af-f4e9-40f5-965e-76fb6d294f30",
+				To: 'shivangyadav36557@gmail.com',
+				From: "shivangyadav36557@gmail.com",
+				Subject: "New message on contact from "+name,
+				Body: Body
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is error at sending message. ')
+						
+					}
+
+				}
+			);
+
+
+
+		}
+    
+
+
+    </script>
+</html>
