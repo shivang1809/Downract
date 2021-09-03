@@ -49,14 +49,16 @@
         .details{
             font-size: 20px;
             width: 50%;
-            border-width: 3px;
+            border-width: 2px;
             border-color: black;
             color: white;
             background-color: #2D2B2B;
+            border-radius: 2px;
         }
         .details:focus{
             background-color: white;
             color: black;
+            border-color: yellow-500;
         }
     </style>
 </head>
@@ -81,9 +83,10 @@
       <div class="formbox">
           <center>
         <form action="javascript:sendmail()" method="post">
-            <input type="text" class="details" id="name" name="name" placeholder="name" required><br><br>
-            <input type="email" class="details" id="sender" name="sender" placeholder="sender mail id" required><br><br>
-            <textarea class="details" id="Message" name="Message" placeholder="massage" cols="30" rows="10"></textarea><br><br>
+            <br><br>
+            <input type="text" class="details" id="name" name="name" placeholder="Name" required><br><br>
+            <input type="email" class="details" id="sender" name="sender" placeholder="E-mail ID" required><br><br>
+            <textarea class="details" id="Message" name="Message" placeholder="Message..." cols="30" rows="10"></textarea><br><br>
             <button type="submit" class="flex mx-auto mt-16 text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg" onclick="Text=sending...">send massage</button>
         </form>
         </center>
