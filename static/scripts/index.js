@@ -14,10 +14,7 @@ function myFunction() {
     document.getElementById("output").innerHTML = output;
     if (link_check === -1){
         alert("Invalid link");
-        function clear() {
-        document.getElementById("link").value = ''
-        return myFunction();}
-        return clear();
+        break myFunction();
         //return true;
     }
     if (fname === -1){
