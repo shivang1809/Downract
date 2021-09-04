@@ -13,8 +13,8 @@ function myFunction() {
     submitOK = "true";
     document.getElementById("output").innerHTML = output;
     if (link_check === -1){
-        alert("Invalid link")
-        return true
+        alert("Invalid link");
+        return myFunction();
     }
     if (fname === -1){
         alert("Link Generated")
