@@ -14,7 +14,7 @@ function myFunction() {
     document.getElementById("output").innerHTML = output;
     if (link_check === -1){
         alert("Invalid link");
-        throw new Error("Invalid link")
+        window.stop()
         //return true;
     }
     if (fname === -1){
