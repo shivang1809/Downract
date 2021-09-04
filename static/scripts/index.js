@@ -47,6 +47,6 @@ function tog() {
     }
   } 
 
-Function clear() {
+function clear() {
     document.getElementById("link").value = ''
     return myFunction();
