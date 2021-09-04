@@ -14,8 +14,7 @@ function myFunction() {
     document.getElementById("output").innerHTML = output;
     if (link_check === -1){
         alert("Invalid link");
-        x.style.display = "block";
-        //return true;
+        return true;
     }
     if (fname === -1){
         alert("Link Generated")
