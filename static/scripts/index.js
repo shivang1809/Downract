@@ -15,7 +15,7 @@ function myFunction() {
     if (link_check === -1){
         alert("Invalid link")
         break;
-        return true
+        //return true
     }
     if (fname === -1){
         alert("Link Generated")
