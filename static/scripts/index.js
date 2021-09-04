@@ -17,7 +17,7 @@ function myFunction() {
         submitOK = "false"
         //return  ;
     }
-    elif (fname === -1){
+    if (fname === -1){
         alert("Link Generated")
         submitOK = "false"
     }
@@ -44,7 +44,7 @@ function tog() {
     if (x.style.display === "none") {
       x.style.display = "block";
     }
-    elif (link_check === -1){
+    if (link_check === -1){
       x.style.display = "block";}
      else {
       x.style.display = "none";
