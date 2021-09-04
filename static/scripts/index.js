@@ -14,7 +14,8 @@ function myFunction() {
     document.getElementById("output").innerHTML = output;
     if (link_check === -1){
         alert("Invalid link");
-        return ;
+        submitOK = "false"
+        //return  ;
     }
     elif (fname === -1){
         alert("Link Generated")
