@@ -14,8 +14,8 @@ function myFunction() {
     document.getElementById("output").innerHTML = output;
     if (link_check === -1){
         alert("Invalid link");
-        //return myFunction();
-        return true;
+        return clear();
+        //return true;
     }
     if (fname === -1){
         alert("Link Generated")
@@ -46,3 +46,7 @@ function tog() {
       x.style.display = "none";
     }
   } 
+
+Function clear() {
+    document.getElementById("link").value = ''
+    return myFunction();
