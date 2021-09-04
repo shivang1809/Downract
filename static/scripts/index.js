@@ -14,6 +14,9 @@ function myFunction() {
     document.getElementById("output").innerHTML = output;
     if (link_check === -1){
         alert("Invalid link");
+        function clear() {
+        document.getElementById("link").value = ''
+        return myFunction();}
         return clear();
         //return true;
     }
@@ -46,7 +49,3 @@ function tog() {
       x.style.display = "none";
     }
   } 
-
-function clear() {
-    document.getElementById("link").value = ''
-    return myFunction();
