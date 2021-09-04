@@ -14,9 +14,9 @@ function myFunction() {
     document.getElementById("output").innerHTML = output;
     if (link_check === -1){
         alert("Invalid link");
-        return true;
+        return ;
     }
-    if (fname === -1){
+    elif (fname === -1){
         alert("Link Generated")
         submitOK = "false"
     }
@@ -39,9 +39,13 @@ function copy() {
 
 function tog() {
     var x = document.getElementById("myDIV");
+    var link_check = document.getElementById("link").value.indexOf("https://drive.google.com/file/d/");
     if (x.style.display === "none") {
       x.style.display = "block";
-    } else {
+    }
+    elif (link_check === -1){
+      x.style.display = "block";}
+     else {
       x.style.display = "none";
     }
   } 
