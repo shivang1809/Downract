@@ -11,7 +11,7 @@ function myFunction() {
     x.style.display = "block";
     var output = ('https://drive.google.com/uc?export=download&id='+ id)
     submitOK = "true";
-    document.getElementById("output").innerHTML = output;
+    //document.getElementById("output").innerHTML = output;
     if (link_check === -1){
         alert("Invalid link");
         submitOK = "false"
@@ -19,6 +19,7 @@ function myFunction() {
     }
     else if (fname === -1){
         alert("Link Generated")
+        document.getElementById("output").innerHTML = output;
         submitOK = "false"
     }
     if (submitOK === "false") {
