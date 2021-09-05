@@ -14,11 +14,12 @@ function myFunction() {
     document.getElementById("output").innerHTML = output;
     if (link_check === -1){
         alert("Invalid link");
-        return true ;
+        submitOK = "false"
+        //return true ;
     }
     else if (fname === -1){
         alert("Link Generated")
-        //submitOK = "false"
+        submitOK = "false"
     }
     if (submitOK === "false") {
         return false;
