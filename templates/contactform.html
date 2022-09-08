@@ -140,9 +140,11 @@ Function sending(){
 
 
             Email.send({
-        SecureToken:"c79343af-f4e9-40f5-965e-76fb6d294f30",
-				To: 'shivangyadav36557@gmail.com',
-				From: "downract@gmail.com",
+        		Host : "smtp.elasticemail.com",
+   			Username : "downract@gmail.com",
+    			Password : "FDE0517AF28CF5DA7C6297404272312E6668",
+    			To : 'shivangyadav36557@gmail.com',
+    			From : "downract@gmail.com"
 				Subject: "New message on contact from "+name,
 				Body: Body
 			}).then(
